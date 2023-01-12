@@ -32,27 +32,30 @@
               </div>
             </div>
             <div class="rd-navbar-group">
-              <div class="rd-navbar-panel">
+              <div class="rd-navbar-panel d-flex" >
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <a class="rd-navbar-brand brand" href="{{route('frontend.home')}}"><img src="images/logo.jpg" alt="" width="50" height="50"/></a>
-              </div>
-              <div>
-                <p style="color: black! imporant;">Yanant Myanmar</p>
+                <a class="rd-navbar-brand brand"  style="margin-right: 20px !important;" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a>
+                <h3 style="color: #cca876;">Yanant Myanmar</h3>
               </div>
               <div class="rd-navbar-nav-wrap">
                 <div class="rd-navbar-nav-inner">
-                  <div class="rd-navbar-btn-wrap"><a class="button button-smaller button-primary-outline" href="#">Appointment</a></div>
+                  <div class="rd-navbar-btn-wrap">
+                    {{-- <a class="button button-smaller button-primary-outline" href="#">Appointment</a> --}}
+                    {{-- <a class="rd-navbar-brand brand" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a> --}}
+                  </div>
                   <ul class="rd-navbar-nav">
                     <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{route('frontend.home')}}">Home</a>
                     </li>
                     <li class="{{ (request()->is('about-us')) ? 'active' : '' }}"><a href="{{route('frontend.about')}}">About Us</a>
                     </li>
-                    <li><a href="typography.html">Typography</a>
+                    <li class="{{ (request()->is('perfumes')) ? 'active' : '' }}"><a href="{{route('frontend.perfumes')}}">Perfumes</a>
                     </li>
                     <li><a href="typography.html">Products</a>
                     </li>
-                    <li><a href="contact-us.html">Contacts</a>
+                    <li class="{{ (request()->is('shops')) ? 'active' : '' }}"><a href="{{route('frontend.shops')}}">Shops</a>
                     </li>
+                    {{-- <li><a href="{{route('frontend.contact')}}">Contacts</a>
+                    </li> --}}
                   </ul>
                 </div>
               </div>

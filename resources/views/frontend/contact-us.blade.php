@@ -141,20 +141,20 @@
                 <div class="row row-30">
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      {{-- <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required"> --}}
                       <label class="form-label" for="contact-name">Name</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                      {{-- <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required"> --}}
                       <label class="form-label" for="contact-email">Email</label>
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form-wrap">
                       <div class="textarea-lined-wrap">
-                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                        {{-- <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea> --}}
                         <label class="form-label" for="contact-message">Message</label>
                       </div>
                     </div>

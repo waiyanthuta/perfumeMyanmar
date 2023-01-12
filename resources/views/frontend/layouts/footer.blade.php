@@ -13,7 +13,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-xl-3">
-                <p class="h7">Recent Posts</p>
+                {{-- <p class="h7">Recent Posts</p>
                       <article class="post post-preview post-preview-inverse"><a href="#">
                           <div class="unit unit-horizontal unit-spacing-lg">
                             <div class="unit-left">
@@ -53,7 +53,7 @@
                                 </ul>
                               </div>
                             </div>
-                          </div></a></article>
+                          </div></a></article> --}}
               </div>
               <div class="col-md-6 col-lg-4 col-xl-3">
                 <p class="h7">Quick links</p>
@@ -61,16 +61,15 @@
                   <div class="col-6">
                     <ul class="list-marked-variant-2">
                       <li><a href="index.html">Home</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Perfumes</a></li>
+                      <li><a href="#">Products</a></li>
                     </ul>
                   </div>
                   <div class="col-6">
                     <ul class="list-marked-variant-2">
-                      <li><a href="about-us.html">About us</a></li>
-                      <li><a href="contact-us.html">Contacts</a></li>
-                      <li><a href="#">Appointment</a></li>
+                      <li><a href="about-us.html">Shops</a></li>
+                      <li><a href="contact-us.html">FAQ</a></li>
                     </ul>
                   </div>
                 </div>
@@ -114,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-6 text-md-left">
-            <p class="rights text-white"><span class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>.&nbsp; All Rights Reserved.</span></p>
+            <p class="rights text-white"><span class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>Yanant Myanmar .&nbsp; All Rights Reserved.</span></p>
           </div>
         </div>
       </div>

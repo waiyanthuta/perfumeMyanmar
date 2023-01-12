@@ -124,10 +124,10 @@
                       <q>When you place your case in the hands of our lawyers and paralegals, you are placing your case in the hands of professionals who are committed to achieving the best possible outcome.</q>
                     </p>
                     <div class="quote-footer">
-                      <cite>Pwint Phyu</cite><small>CEO at Yanant Myanmar</small>
+                      <cite>Pwint Phyu</cite><small>Founder of Yanant Myanmar</small>
                     </div>
                   </blockquote>
-                  <div class="button-wrap inset-md-left-70"><a class="button button-responsive button-medium button-primary-outline-v2" href="#">Request a Free Consultation</a></div>
+                  <div class="button-wrap inset-md-left-70"><a class="button button-responsive button-medium button-primary-outline-v2" href="#">Order Yanant</a></div>
                 </div>
               </article>
             </div>
@@ -195,7 +195,7 @@
                 <div class="block-number">08</div>
                 <h3 class="text-normal">Products</h3>
                 <p class="h5 h5-smaller text-style-4">in Yanant</p>
-                <p>If you or your business is facing a legal challenge, contact us today to arrange a free initial consultation with an attorney.</p><a class="link link-group link-group-animated link-bold link-secondary" href="#"><span>Read more</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
+                <p>If you or your business is facing a legal challenge, contact us today to arrange a free initial consultation with an attorney.</p><a class="link link-group link-group-animated link-bold link-secondary" href="{{route('frontend.perfumes')}}"><span>See More</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
               </div>
             </div>
           </div>

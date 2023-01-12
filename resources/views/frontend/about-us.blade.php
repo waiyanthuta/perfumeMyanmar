@@ -11,7 +11,7 @@
 
       <section class="section-66 section-md-90 section-xl-bottom-120">
         <div class="container">
-          <h3>Who We Are</h3>
+          <h3>About Yanant</h3>
           <div class="row row-40 justify-content-xl-between align-items-lg-center">
             <div class="col-md-6 col-xl-5 text-secondary">
               <div class="inset-md-right-15 inset-xl-right-0">
@@ -46,6 +46,35 @@
         </div>
       </section>
 
+      <!-- About Start -->
+      <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img">
+                        <img src="{{asset('images/about.jpg')}}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="section-header text-left">
+                        <p>Learn About Us</p>
+                        <h2>25 Years Experience</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                        </p>
+                        <a class="btn" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
       <section class="section-60 section-lg-90 bg-whisper">
         <div class="container">
           <div class="row row-40 align-items-sm-end">
