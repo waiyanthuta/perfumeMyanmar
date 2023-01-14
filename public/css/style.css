@@ -10774,6 +10774,14 @@ html:not(.lt-ie10) .not-animated {
 	}
 }
 
+@media (max-width: 698px){
+	.rd-navbar-fixed .rd-navbar-brand img{
+		position: fixed;
+		margin-top: 20px !important;
+		margin-left: 120px;
+	}
+}
+
 .rd-navbar-static .rd-navbar-nav > li.active > a:after,
 .rd-navbar-static .rd-navbar-nav > li.focus > a:after,
 .rd-navbar-static .rd-navbar-nav > li.opened > a:after,
@@ -14127,4 +14135,73 @@ html.boxed .rd-navbar--is-clone {
         margin-bottom: 30px;
         height: auto;
     }
+}
+
+/*******************************/
+/********* Pricing CSS *********/
+/*******************************/
+.price {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.price .price-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 30px;
+    background: rgba(29, 36, 52, .04);
+    transition: .3s;
+}
+
+.price .price-item:hover {
+    background: #D5B981;
+}
+
+.price .price-img {
+    position: relative;
+    width: 100px;
+}
+
+.price .price-img img {
+    width: 100%;
+}
+
+.price .price-img::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    z-index: 1;
+}
+
+.price .price-text {
+    position: relative;
+    padding: 0 15px;
+    width: calc(100% - 100px);
+    overflow: hidden;
+}
+
+.price .price-text h2 {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.price .price-text h3 {
+    position: relative;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
 }

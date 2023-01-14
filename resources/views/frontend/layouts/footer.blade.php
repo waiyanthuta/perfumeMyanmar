@@ -9,7 +9,6 @@
                   <p>
                     If you or your business is facing a legal
                     challenge that calls for sound advice and skilled representation, contact us today to arrange a free  consultation with an attorney.
-                  </p><a class="link link-group link-group-animated link-bold link-white" href="#"><span>Free Consultation</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-xl-3">
@@ -87,7 +86,7 @@
                   </div>
                   <div class="unit unit-horizontal unit-spacing-md">
                     <div class="unit-left"><span class="novi-icon icon icon-xs icon-storm-gray material-icons-place"></span></div>
-                    <div class="unit-body"><a class="link-white d-inline" href="#">6036 Richmond hwy,<br>Alexandria, VA USA 22303</a></div>
+                    <div class="unit-body"><a class="link-white d-inline" href="#">Tarmwe, Thida Street,<br>Yangon, Myanmar</a></div>
                   </div>
                 </address>
               </div>
@@ -107,13 +106,13 @@
               <p class="font-italic text-white">Follow Us:</p>
               <ul class="list-inline list-inline-reset">
                 <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook" href="#"></a></li>
-                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-twitter" href="#"></a></li>
-                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li>
+                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-instagram" href="#"></a></li>
+                {{-- <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> --}}
               </ul>
             </div>
           </div>
           <div class="col-md-6 text-md-left">
-            <p class="rights text-white"><span class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>Yanant Myanmar .&nbsp; All Rights Reserved.</span></p>
+            <p class="rights text-white"><span class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>Yanant Cologne & Perfumes .&nbsp; All Rights Reserved.</span></p>
           </div>
         </div>
       </div>

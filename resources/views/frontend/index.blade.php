@@ -115,7 +115,7 @@
           <div class="container">
             <div class="inset-xl-left-70 inset-xl-right-70">
               <article class="box-cart bg-ebony-clay">
-                <div class="box-cart-image"><img src="images/home-2.jpg" alt="" width="342" height="338"/>
+                <div class="box-cart-image"><img src="images/home-2-342x338.jpg" alt="" width="342" height="338"/>
                 </div>
                 <div class="box-cart-body">
                   <blockquote class="blockquote-complex blockquote-complex-inverse">

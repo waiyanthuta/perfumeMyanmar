@@ -24,25 +24,25 @@
                   <div class="rd-navbar-aside-group">
                     <ul class="list-inline list-inline-reset">
                       <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-facebook" href="#"></a></li>
-                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-twitter" href="#"></a></li>
-                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li>
+                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-instagram" href="#"></a></li>
+                      {{-- <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> --}}
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
             <div class="rd-navbar-group">
-              <div class="rd-navbar-panel d-flex" >
+              <div class="rd-navbar-panel d-flex align-items-center" >
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <a class="rd-navbar-brand brand"  style="margin-right: 20px !important;" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a>
-                <h3 style="color: #cca876;">Yanant Myanmar</h3>
+                <a class="rd-navbar-brand brand"  style="margin-right: 10px !important;" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a>
+                <h3 style="color: #cca876;">Yanant Cologne & Perfumes</h3>
               </div>
               <div class="rd-navbar-nav-wrap">
                 <div class="rd-navbar-nav-inner">
-                  <div class="rd-navbar-btn-wrap">
-                    {{-- <a class="button button-smaller button-primary-outline" href="#">Appointment</a> --}}
-                    {{-- <a class="rd-navbar-brand brand" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a> --}}
-                  </div>
+                  {{-- <div class="rd-navbar-btn-wrap">
+                    <a class="button button-smaller button-primary-outline" href="#">Appointment</a>
+                    <a class="rd-navbar-brand brand" href="{{route('frontend.home')}}"><img src="{{asset('images/logo.jpg')}}" alt="" width="50" height="50"/></a>
+                  </div> --}}
                   <ul class="rd-navbar-nav">
                     <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{route('frontend.home')}}">Home</a>
                     </li>
@@ -50,7 +50,7 @@
                     </li>
                     <li class="{{ (request()->is('perfumes')) ? 'active' : '' }}"><a href="{{route('frontend.perfumes')}}">Perfumes</a>
                     </li>
-                    <li><a href="typography.html">Products</a>
+                    <li class="{{ (request()->is('products')) ? 'active' : '' }}"><a href="{{route('frontend.products')}}">Products</a>
                     </li>
                     <li class="{{ (request()->is('shops')) ? 'active' : '' }}"><a href="{{route('frontend.shops')}}">Shops</a>
                     </li>
