@@ -6,7 +6,7 @@
           <div class="swiper-wrapper text-center">
             <div class="swiper-slide" data-slide-bg="images/home-slider-slide-1.jpg">
               <div class="swiper-slide-caption text-center">
-                <div class="container">
+                {{-- <div class="container">
                   <div class="row justify-content-md-center">
                     <div class="col-md-11 col-lg-10 col-xl-9">
                       <div class="header-decorated" data-caption-animate="fadeInUp" data-caption-delay="0s">
@@ -17,12 +17,12 @@
                       <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="button button-lg button-primary-outline-v2" href="#">Request a Free Consultation</a></div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg="images/home-slider-slide-2.jpg">
               <div class="swiper-slide-caption text-center">
-                <div class="container">
+                {{-- <div class="container">
                   <div class="row justify-content-md-center">
                     <div class="col-md-11 col-lg-10 col-xl-9">
                       <div class="header-decorated" data-caption-animate="fadeInUp" data-caption-delay="0s">
@@ -33,12 +33,12 @@
                       <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="button button-lg button-primary-outline-v2" href="#">Request a Free Consultation</a></div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg="images/home-slider-slide-3.jpg">
               <div class="swiper-slide-caption text-center">
-                <div class="container">
+                {{-- <div class="container">
                   <div class="row justify-content-md-center">
                     <div class="col-md-11 col-lg-10 col-xl-9">
                       <div class="header-decorated" data-caption-animate="fadeInUp" data-caption-delay="0s">
@@ -49,7 +49,7 @@
                       <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="button button-lg button-primary-outline-v2" href="#">Request a Free Consultation</a></div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>

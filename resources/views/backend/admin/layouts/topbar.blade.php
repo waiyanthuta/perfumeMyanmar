@@ -56,78 +56,7 @@
                         </li>
 
                         <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle"  id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter"  >{{count(Auth::guard('admin')->user()->unreadNotifications)}}</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <a href="javascript:void(0)">
-                                    <h5 class="dropdown-header btn btn-info">
-                                        Marked as Read
-                                    </h5>
-                                </a>
-                                {{-- @foreach (Auth::guard('admin')->user()->unreadNotifications->take(5) as $notification) --}}
-                                @foreach (Auth::guard('admin')->user()->notifications->take(10) as $notification)
-                                {{-- dd({{Str::snake(class_basename($notification->type))}}); --}}
-                               {{-- {{ dd($notification->data['order']);}} --}}
-                                <a onclick="markAsRead()" class="dropdown-item d-flex align-items-center" href="{{route("backend.admin.orders")}}">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">{{$notification->created_at->diffForHumans()}} </div>
-                                        <div class=""></div><span class="{{ $notification->read_at==null ? 'font-weight-bold' : ''  }}">{{$notification->data['order']['name']}} ordered the product</span>
-                                    </div>
-                                </a>
-                                @endforeach
-                                {{-- <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a> --}}
-                                {{-- <a class="dropdown-item text-center small text-gray-500" href="{{route("backend.admin.orders")}}">Show All Alerts</a> --}}
-                            </div>
-                            <script type="text/javascript">
-                                function markAsRead(){
-                                    // $.get('/backend/admin/markAsRead');
-                                    
-                                    document.location.href='/backend/admin/markAsRead';
-                                    // $.ajax({
-                                    //         url: "{{route('markedAsRead')}}",
-                                    //         type: 'GET',
-                                    //         success: function(res) {
-                                    //             console.log(res);
-                                    //             alert(res);
-                                    //         }
-                                    //     });
-                                            // alert('clicked')
-                                        }
-                            </script>
-                        </li>
+                        
 
                         <!-- Nav Item - Messages -->
                         {{-- <li class="nav-item dropdown no-arrow mx-1">

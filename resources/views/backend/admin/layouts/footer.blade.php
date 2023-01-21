@@ -5,7 +5,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Fresh-flower-market</span>
+            <span>Copyright &copy; Yanant Cologne & Perfumes</span>
         </div>
     </div>
 </footer>
@@ -36,7 +36,7 @@ aria-hidden="true">
     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
     <div class="modal-footer">
         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-primary" href="{{route('backend.admin.logout')}}">Logout</a>
+        <a class="btn btn-primary" href="{{route('backend.logout')}}">Logout</a>
     </div>
 </div>
 </div>

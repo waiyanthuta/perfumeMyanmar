@@ -26,9 +26,17 @@ class PageController extends Controller
        if ( Auth::guard('admin')->attempt($validation)){
         //if ( Auth::attempt(['email' => $validation['email'], 'password' => $validation['password']])){
         // dd('success');
-           return view('backend.admin.index');
+           return redirect()->route('backend.index');
        }else {
             return back()->with('fails', 'Incorrect Credentials');
         }
+    }
+
+    public function index(){
+        return view('backend.admin.index');
+    }
+    public function logout(){
+        auth()->logout();
+        return redirect()->route('backend.loginform');
     }
 }

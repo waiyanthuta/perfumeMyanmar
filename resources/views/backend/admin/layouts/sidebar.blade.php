@@ -5,11 +5,12 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/backend/admin">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/yanant/admin/home">
+                <div class="sidebar-brand-icon ">
+                    {{-- <i class="fas fa-laugh-wink"></i> --}}
+                    <img src="{{asset('images/logo.jpg')}}" height="50px" width="50px" alt="">
                 </div>
-                <div class="sidebar-brand-text">Fresh-Flower-Market Admin</div>
+                <div class="sidebar-brand-text">Yanant Cologne & Perfumes</div>
             </a>
 
             <!-- Divider -->
@@ -17,22 +18,12 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/backend/admin">
+                <a class="nav-link" href="/yanant/admin/home">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Admin Dashboard</span></a>
             </li>
-            
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item ">
-                <a class="nav-link" href="{{route('backend.admin.banks_info')}}">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Bank Information</span></a>
-            </li>
-
-            <!-- Divider -->
+            {{-- <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
@@ -50,35 +41,34 @@
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">UI Dashboard</h6>
-                    <a class="collapse-item" href="{{route('backend.admin.indexBanner')}}">Index Banner</a>
+                    <a class="collapse-item" href="">Index Banner</a>
                 </div>
             </div>
-            </li>      
+            </li> --}}
             
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-             <!-- Heading -->
-             <div class="sidebar-heading">
-                Category
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Perfume Tab
             </div>
-
+            
             <!-- Nav Item - Products Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>Categories</span>
+                <span>Yanant Perfume</span>
             </a>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Products</h6>
-                    <a class="collapse-item" href="{{route('backend.admin.categories')}}">Categories</a>
-                    <a class="collapse-item" href="{{route('backend.admin.subcategories')}}">Sub Categories</a>
+                    <h6 class="collapse-header">Yanant Perfume</h6>
+                    <a class="collapse-item" href="{{route('backend.perfume')}}">Check Perfumes</a>
+                    <a class="collapse-item" href="{{route('backend.add_perfume')}}">Add Perfume</a>
                 </div>
             </div>
             </li>      
-            
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -92,65 +82,101 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>Products</span>
+                <span>Yanant Products</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Products</h6>
-                    <a class="collapse-item" href="{{route('backend.admin.products')}}">Check Products</a>
-                    <a class="collapse-item" href="{{route('backend.admin.add_products')}}">Add Products</a>
+                    <h6 class="collapse-header">Yanant Products</h6>
+                    <a class="collapse-item" href="{{route('backend.product')}}">Check Product</a>
+                    <a class="collapse-item" href="{{route('backend.add_product')}}">Add Product</a>
                 </div>
             </div>
             </li>      
             
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Categories</span>
+            </a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Product Category</h6>
+                    <a class="collapse-item" href="{{route('backend.product')}}">Check Category</a>
+                    <a class="collapse-item" href="{{route('backend.add_product')}}">Add Category</a>
+                </div>
+            </div>
+            </li>      
+            {{-- <!-- Divider -->
+            <hr class="sidebar-divider">
 
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Product Category Tab
+            </div>
+            
+            <!-- Nav Item - Diffusers Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Categories</span>
+            </a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Categories</h6>
+                    <a class="collapse-item" href="">Check Category</a>
+                    <a class="collapse-item" href="">Add Category</a>
+                </div>
+            </div>
+            </li> --}}
+
+            {{-- <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Humidifier Tab
+            </div>
+            
+            <!-- Nav Item - Diffusers Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="true" aria-controls="collapseFive">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Humidifiers</span>
+            </a>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Humidifier</h6>
+                    <a class="collapse-item" href="">Check Humidifier</a>
+                    <a class="collapse-item" href="">Add Humidifier</a>
+                </div>
+            </div>
+            </li>       --}}
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Accounts
-            </div>   
-
-            <!-- Nav Item - Agent Collapse Menu -->
+                Shops Tab
+            </div>
+            
+            <!-- Nav Item - Essential Oil Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
-                aria-expanded="true" aria-controls="collapseThree">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>Check</span>
+                <span>Shops</span>
             </a>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Check list:</h6>
-                    <a class="collapse-item" href="{{route('backend.admin.agents')}}">Agents</a>
+                    <h6 class="collapse-header">Shops</h6>
+                    <a class="collapse-item" href="{{route('backend.shop')}}">Check Shops</a>
+                    <a class="collapse-item" href="{{route('backend.add_shop')}}">Add Shop</a>
                 </div>
             </div>
-            </li>
-
-           <!-- Divider -->
-           <hr class="sidebar-divider">
-
-           <!-- Heading -->
-           <div class="sidebar-heading">
-               Order Tab
-           </div>   
-
-           <!-- Nav Item - Agent Collapse Menu -->
-           <li class="nav-item">
-               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
-               aria-expanded="true" aria-controls="collapseFour">
-               <i class="fas fa-fw fa-cog"></i>
-               <span>Order</span>
-           </a>
-           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
-               <div class="bg-white py-2 collapse-inner rounded">
-                   <h6 class="collapse-header">Watch Order:</h6>
-                   <a class="collapse-item" href="{{route('backend.admin.orders')}}">Watch Order</a>
-               </div>
-           </div>
-           </li>
-        
-
+            </li>      
 
             {{-- <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
