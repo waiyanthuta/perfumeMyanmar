@@ -47,12 +47,13 @@ class ProductController extends Controller
             $product->product_pic = $productpic_name;
             $product->save();
             if($product){
-                foreach($validation['detail'] as $detail)
-               $pdt_detail = new ProductDetail();
-               $pdt_detail->product_id = $product->id;
-               $pdt_detail->size = $detail['size'];
-               $pdt_detail->price = $detail['price'];
-               $pdt_detail->save();
+                foreach($validation['detail'] as $detail){
+                    $pdt_detail = new ProductDetail();
+                    $pdt_detail->product_id = $product->id;
+                    $pdt_detail->size = $detail['size'];
+                    $pdt_detail->price = $detail['price'];
+                    $pdt_detail->save();
+                }
             }
             return redirect()->route('backend.product')->with("success","Product has been added successfully");
         }else{
@@ -63,6 +64,45 @@ class ProductController extends Controller
         return view('backend.admin.view_product',["product" => $product]);
     }
     public function edit_product(Product $product){
-        return view('backend.admin.edit_product',["product" => $product]);
+        $categories = Category::with('product')->get();
+        return view('backend.admin.edit_product',["product" => $product, "categories" => $categories]);
+    }
+    public function chg_product(Product $product,Request $request){
+        // dd($request->all());
+        $product->name = $request->name;
+        $product->category_id = $request->category_id;
+        $product->desc = $request->desc;
+        if($request->productpic){
+            if(file_exists(public_path('images\products\\').$product->product_pic)){
+                unlink(public_path('images/products/').$product->product_pic);
+            }
+            $product_pic = $request->productpic;
+            $product_picname =  uniqid() . "_" . $product_pic->getClientOriginalName();
+            $product_pic->move(public_path('images/products'),$product_picname);
+            $product->product_pic = $product_picname;
+        }
+        $product->update();
+        if($request->detail){
+            foreach($product->product_detail as $detail){
+                $detail->delete();
+            }
+            foreach($request->detail as $detail){
+                $p_detail = new ProductDetail();
+                $p_detail->product_id = $product->id;
+                $p_detail->size = $detail['size'];
+                $p_detail->price = $detail['price'];
+                $p_detail->save();
+            }
+        }
+        return redirect()->route('backend.product')->with("success","Product Updated Successfully");
+    }
+
+    public function del_product($id){
+        $product = Product::findOrFail($id);
+            if(file_exists(public_path('images/products/').$product->product_pic)){
+                unlink(public_path('images/products/').$product->product_pic);
+            }
+            $product->delete();
+            return redirect()->route("backend.product")->with("success","Product has been deleted Successfully");
     }
 }

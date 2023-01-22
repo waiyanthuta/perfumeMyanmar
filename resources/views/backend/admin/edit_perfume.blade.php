@@ -48,10 +48,7 @@
           <div class="m-4">
               <div class="form-outline">
                 <label class="form-label" for="form6Example1 m-4">Perfume Size and Price</label>
-                @error('size')
-                <p class="text-danger font-weight-bold">{{$message}}</p>
-                @enderror
-                @error('price')
+                @error('detail')
                 <p class="text-danger font-weight-bold">{{$message}}</p>
                 @enderror
 
@@ -63,7 +60,7 @@
                     <option value="{{$size->id}}" @if($detail->perfume_size_id == $size->id) selected @endif>{{$size->size}}</option> 
                     @endforeach
                   </select> --
-                  <input type="number" value="{{$detail->price}}" id="form6Example1" class="form-control col-5" /><a class="btn btn-danger btn-icon-split mb-2 btn-md mx-2 deletePefDetail" id="{{ $detail->id}}"><span class="icon text-white-100"><i class="fas fa-trash"></i></span></a>
+                  <input type="number" disabled value="{{$detail->price}}" id="form6Example1" class="form-control col-5" /><a class="btn btn-danger btn-icon-split mb-2 btn-md mx-2 deletePefDetail" id="{{ $detail->id}}"><span class="icon text-white-100"><i class="fas fa-trash"></i></span></a>
                 </div>
                 @endforeach
                 <div class="p-2 d-flex" style="justify-content: flex-start !important">

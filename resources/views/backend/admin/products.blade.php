@@ -68,9 +68,9 @@
                             <div class="modal-body ">Are you sure you want to delete this product?</div>
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                <form action="/backend/admin/delete_products/{{$product->id??'null'}}" method="POST">@method('delete')
+                                <form action="{{route('backend.del_product',$product->id??'null')}}" method="POST">@csrf
                                     <button class="btn btn-danger" type="submit">Yes</button>
-                                </form>>
+                                </form>
                             </div>
                         </div>
                         </div>
