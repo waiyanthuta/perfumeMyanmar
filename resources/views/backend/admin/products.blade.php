@@ -35,11 +35,14 @@
                                         <tr>
                                             <td><img src="{{asset('images/products/'.$product->product_pic)}}" width="75px" height="50px" alt=""></td>
                                             <td>{{$product->name}}</td>
-                                            {{-- <td>{{$product->product_detail->category_id}}</td> --}}
+                                            <td>{{$product->category->name}}</td>
                                             <td>{{$product->desc}}</td>
-                                            <td><a href="" class="btn btn-info">Edit</a></td>
+                                            <td><a href="{{route('backend.view_product',$product)}}" class="btn btn-info">View</a></td>
                                             <td>
-                                               <a href="" class="btn btn-danger" data-toggle="modal" data-target="#deleteProductModal">Delete</a>
+                                               <a href="" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#deleteProductModal">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-trash"></i>
+                                                </span> <span class="text">Delete</span></a>
                                             </td>
                                         </tr>
 

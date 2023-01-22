@@ -38,6 +38,7 @@ class ProductController extends Controller
             $product = new Product();
             $product->name = $validation['name'];
             $product->desc = $validation['desc'];
+            $product->category_id = $validation['category_id'];
             
             $productpic = $validation['productpic'];
             $productpic_name = uniqid(). "_" . $productpic->getClientOriginalName();
@@ -49,7 +50,6 @@ class ProductController extends Controller
                 foreach($validation['detail'] as $detail)
                $pdt_detail = new ProductDetail();
                $pdt_detail->product_id = $product->id;
-               $pdt_detail->category_id = $validation['category_id'];
                $pdt_detail->size = $detail['size'];
                $pdt_detail->price = $detail['price'];
                $pdt_detail->save();
@@ -57,7 +57,12 @@ class ProductController extends Controller
             return redirect()->route('backend.product')->with("success","Product has been added successfully");
         }else{
             return back()->with("fail","Product can not be added");
-
         }
+    }
+    public function view_product(Product $product){
+        return view('backend.admin.view_product',["product" => $product]);
+    }
+    public function edit_product(Product $product){
+        return view('backend.admin.edit_product',["product" => $product]);
     }
 }

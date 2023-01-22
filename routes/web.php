@@ -43,20 +43,21 @@ Route::name('backend.')->group(function(){
         Route::get('/admin/logout',[PageController::class,'logout'])->name('logout');
 
         //yanant unique perfumes
-        Route::get('/admin/perfume',[PerfumeController::class,'show_Perf'])->name('perfume');
-        Route::get('/admin/add_perfume',[PerfumeController::class,'add_Perf'])->name('add_perfume');
-        Route::post('/admin/add_perfume',[PerfumeController::class,'insert_Perf'])->name('insert_perfume');
-        Route::get('/admin/view_perfume/{perfume}',[PerfumeController::class,'view_Perf'])->name('view_perfume');
-        Route::get('/admin/edit_perfume/{perfume}',[PerfumeController::class,'edit_Perf'])->name('edit_perfume');
-        Route::post('/admin/edit_perfume/{perfume}',[PerfumeController::class,'chg_Perf'])->name('chg_perfume');
-        Route::post('/admin/del_perfume/{id}',[PerfumeController::class,'del_Perf'])->name('del_perfume');
+        Route::get('/admin/perfumes',[PerfumeController::class,'show_Perf'])->name('perfume');
+        Route::get('/admin/add_perfumes',[PerfumeController::class,'add_Perf'])->name('add_perfume');
+        Route::post('/admin/add_perfumes',[PerfumeController::class,'insert_Perf'])->name('insert_perfume');
+        Route::get('/admin/view_perfumes/{perfume}',[PerfumeController::class,'view_Perf'])->name('view_perfume');
+        Route::get('/admin/edit_perfumes/{perfume}',[PerfumeController::class,'edit_Perf'])->name('edit_perfume');
+        Route::post('/admin/edit_perfumes/{perfume}',[PerfumeController::class,'chg_Perf'])->name('chg_perfume');
+        Route::post('/admin/del_perfumes/{id}',[PerfumeController::class,'del_Perf'])->name('del_perfume');
         Route::post('/admin/del_perfume_detail',[PerfumeController::class,'del_PerfDetail'])->name('del_pefdetail');
         
         //yanant products
         Route::get('/admin/products',[ProductController::class,'show_product'])->name('product');
         Route::get('/admin/add_products',[ProductController::class,'add_product'])->name('add_product');
         Route::post('/admin/add_products',[ProductController::class,'insert_product'])->name('insert_product');
-        Route::get('/admin/edit_products',[ProductController::class,'edit_product'])->name('edit_product');
+        Route::get('/admin/view_products/{product}',[ProductController::class,'view_product'])->name('view_product');
+        Route::get('/admin/edit_products/{product}',[ProductController::class,'edit_product'])->name('edit_product');
         Route::post('/admin/edit_products',[ProductController::class,'chg_product'])->name('chg_product');
         Route::get('/admin/del_products',[ProductController::class,'del_product'])->name('del_product');
         
