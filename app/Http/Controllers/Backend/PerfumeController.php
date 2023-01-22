@@ -32,19 +32,16 @@ class PerfumeController extends Controller
             "name" => "required",
             "category" => "required",
             "detail" => "required",
-            // "price" => "required",
             "desc" => "required",
             "perfumepic" => "required",
         ],[
-            "name.required" => "You must fill the name.",
-            "category.required" => "You must choose the category.",
-            "detail.required" => "You must choose the size.",
-            // "price.required" => "You must fill the price.",
-            "desc.required" => "You must fill the description.",
+            "name.required" => "You must fill the Name.",
+            "category.required" => "You must choose the Category.",
+            "detail.required" => "You must choose the detail for Perfume.",
+            "desc.required" => "You must fill the Description.",
             "perfumepic.required" => "Please Choose Picture.",
         ]);
         if($validation){
-            // dd($validation);
             $perfume = new Perfume();
             $perfume->name = $validation['name'];
             $perfume->desc = $validation['desc'];
@@ -56,12 +53,14 @@ class PerfumeController extends Controller
             $perfume->perfume_pic = $perfumepic_name;
             $perfume->save();
 
-            foreach($validation['detail'] as $detail){
-                $perf_detail = new PerfumeDetail();
-                $perf_detail->perfume_id = $perfume->id;
-                $perf_detail->perfume_size_id = $detail['size'];
-                $perf_detail->price = $detail['price'];
-                $perf_detail->save();
+            if($perfume){
+                foreach($validation['detail'] as $detail){
+                    $perf_detail = new PerfumeDetail();
+                    $perf_detail->perfume_id = $perfume->id;
+                    $perf_detail->perfume_size_id = $detail['size'];
+                    $perf_detail->price = $detail['price'];
+                    $perf_detail->save();
+                }
             }
             return redirect()->route('backend.perfume')->with('success','New Perfume has been added successfully');
         }else {

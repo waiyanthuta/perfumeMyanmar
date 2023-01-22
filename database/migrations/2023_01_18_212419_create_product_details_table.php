@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('product_id')->constrained();
             $table->foreignId('category_id')->constrained();
             $table->string('size');
-            $table->string('price');
+            $table->integer('price');
             $table->timestamps();
         });
     }

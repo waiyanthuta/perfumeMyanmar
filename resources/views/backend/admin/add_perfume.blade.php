@@ -52,10 +52,7 @@
                     <a class="btn btn-success btn-icon-split btn-md mx-2" onclick="add()"><span class="icon text-white-100"><i class="fas fa-plus"></i></span></a>
                     <a class="btn btn-warning btn-icon-split btn-md mx-2" onclick="remove()"><span class="icon text-white-100"><i class="fas fa-minus"></i></span></a>
                   </div>
-                  @error('size')
-                    <p class="text-danger font-weight-bold">{{$message}}</p>
-                  @enderror
-                  @error('price')
+                  @error('detail')
                     <p class="text-danger font-weight-bold">{{$message}}</p>
                   @enderror
                   <div class="col-12 d-flex mb-2" style="justify-content: space-between !important">
@@ -119,11 +116,11 @@
 
             <!--File Document-->
             <div class="m-4">
-              <label class="form-label" for="customFile">Perfume Picture</label>
+              <label class="form-label" for="customFile">Perfume Picture <span class="text-warning">** prefer photo size with 246x300px **</span></label>
+              
               @error('perfumepic')
                 <p class="text-danger font-weight-bold">{{$message}}</p>
               @enderror
-              <p class="text-warning">** prefer photo size with 246x300px **</p>
               <input type="file" name="perfumepic" class="form-control" id="customFile" /> <br>
             </div>
 

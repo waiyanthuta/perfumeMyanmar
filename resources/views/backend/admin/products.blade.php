@@ -10,6 +10,11 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Products Table</h6>
+                            @if (Session("success"))
+                            <div class="alert alert-success">
+                                {{Session('success')}}
+                            </div>
+                            @endif
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -19,8 +24,6 @@
                                             <th>Product Pic</th>
                                             <th>Name</th>
                                             <th>Category</th>
-                                            <th>SubCategory</th>
-                                            <th>Price</th>
                                             <th>Desc</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
@@ -28,15 +31,13 @@
                                     </thead>
                                     <tbody>
                                         @foreach ($products as $product)
-                                        {{-- {{dd($product->category->name)}} --}}
+                                        {{-- {{dd($product->product_detail)}} --}}
                                         <tr>
-                                            <td><img src="{{asset('images/productpics/'.$product->productpic)}}" width="75px" height="50px" alt=""></td>
+                                            <td><img src="{{asset('images/products/'.$product->product_pic)}}" width="75px" height="50px" alt=""></td>
                                             <td>{{$product->name}}</td>
-                                            <td>{{$product->category->name}}</td>
-                                            <td>{{$product->subcategory?->name}}</td>
-                                            <td>{{number_format($product->price, 2, '.', ',')}}</td>
+                                            {{-- <td>{{$product->product_detail->category_id}}</td> --}}
                                             <td>{{$product->desc}}</td>
-                                            <td><a href="{{route('backend.admin.edit_products',$product->id)}}" class="btn btn-info">Edit</a></td>
+                                            <td><a href="" class="btn btn-info">Edit</a></td>
                                             <td>
                                                <a href="" class="btn btn-danger" data-toggle="modal" data-target="#deleteProductModal">Delete</a>
                                             </td>
