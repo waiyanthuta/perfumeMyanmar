@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function show_product(){
-        return view('backend.admin.perfumes');
+        return view('backend.admin.products');
     }
 }
