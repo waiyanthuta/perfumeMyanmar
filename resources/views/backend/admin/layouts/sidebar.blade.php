@@ -102,8 +102,8 @@
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Product Category</h6>
-                    <a class="collapse-item" href="{{route('backend.product')}}">Check Category</a>
-                    <a class="collapse-item" href="{{route('backend.add_product')}}">Add Category</a>
+                    <a class="collapse-item" href="{{route('backend.product_category')}}">Check Category</a>
+                    {{-- <a class="collapse-item" href="">Add Category</a> --}}
                 </div>
             </div>
             </li>      

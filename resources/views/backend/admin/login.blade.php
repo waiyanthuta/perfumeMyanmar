@@ -20,7 +20,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Yanant Admin!</h1>
                                     </div>
-                                    <form class="user" action="{{route('backend.login')}}" method="POST" autocomplete="off">
+                                    <form class="user" action="{{route('backend.login')}}" method="POST">
                                         @csrf
                                         @if (Session("fails"))
                                         <div class="alert alert-danger">

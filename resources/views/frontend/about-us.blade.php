@@ -6,6 +6,9 @@
           <div class="page-title">
             <h2>About Us</h2>
           </div>
+          <div class="text">
+            <p>this is text</p>
+          </div>
         </div>
       </section>
 
@@ -126,7 +129,7 @@
               </div>
             </div>
             <div class="col-md-9 col-lg-6 col-xl-7 offset-top-30 offset-md-top-0 d-none d-lg-block mb-4">
-              <div class="image-wrap-1"><img src="images/about-1-670x578.png" alt="" width="670" height="578"/>
+              <div class="image-wrap-1"><img src="images/about.png" alt="" width="670" height="578"/>
               </div>
             </div>
           </div>

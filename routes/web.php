@@ -60,6 +60,13 @@ Route::name('backend.')->group(function(){
         Route::get('/admin/edit_products/{product}',[ProductController::class,'edit_product'])->name('edit_product');
         Route::post('/admin/edit_products/{product}',[ProductController::class,'chg_product'])->name('chg_product');
         Route::post('/admin/del_products/{id}',[ProductController::class,'del_product'])->name('del_product');
+
+        //yanant products category
+        Route::get('admin/product_categories',[ProductController::class,'show_category'])->name('product_category');
+        Route::get('admin/edit_product_categories',[ProductController::class,'edit_category'])->name('edit_product_category');
+        Route::post('admin/edit_product_categories',[ProductController::class,'chg_category'])->name('chg_product_category');
+        Route::post('admin/add_product_categories',[ProductController::class,'insert_category'])->name('insert_product_category');
+        Route::post('admin/del_product_categories/{id}',[ProductController::class,'del_category'])->name('del_product_category');
         
         //yanant shops
         Route::get('/admin/shops',[ShopController::class,'show_shop'])->name('shop');

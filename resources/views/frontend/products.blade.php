@@ -7,7 +7,7 @@
         <div class="container text-center">
           <div class="row row-40 justify-content-lg-center">
             <div class="col-sm-12">
-              <h3>Our Yanant Products</h3>
+              <h2 class="text-black">Our Yanant Products</h2>
             </div>
             <div class="col-lg-11 col-xl-9">
               <div class="owl-carousel-inverse">
@@ -15,13 +15,9 @@
                   <div class="item">
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
-                              <p>
-                                <q>We have been very pleased with our experience with the LawExpert. Although we did not actually go to court, I felt that Amanda was more than ready to fight her best for us. Our whole experience with all of the staff was very easy and enjoyable. Thank you for your work!</q>
-                              </p>
+                              
                             </div>
                             <div class="quote-meta">
-                              <cite>Mark Wilson</cite>
-                              <p class="caption">Client</p>
                             </div>
                           </blockquote>
                   </div>
@@ -29,12 +25,8 @@
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
                               <p>
-                                <q>I am so glad we chose LawExpert law firm to represent us. We were in a very bad motorcycle accident. We were treated like family and were kept involved every step of the way. Thank you all who were involved in one way or other working our case!</q>
+                                <q style="color: black!important">I am so glad we chose LawExpert law firm to represent us. We were in a very bad motorcycle accident. We were treated like family and were kept involved every step of the way. Thank you all who were involved in one way or other working our case!</q>
                               </p>
-                            </div>
-                            <div class="quote-meta">
-                              <cite>Kate Wilson</cite>
-                              <p class="caption">Client</p>
                             </div>
                           </blockquote>
                   </div>
@@ -42,12 +34,8 @@
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
                               <p>
-                                <q>John and his staff were great with making us feel comfortable during the process. They kept us updated on our case progress and were very helpful with all of the paperwork we needed to complete. We are very pleased with the outcome of everything.</q>
+                                <q style="color: black!important">John and his staff were great with making us feel comfortable during the process. They kept us updated on our case progress and were very helpful with all of the paperwork we needed to complete. We are very pleased with the outcome of everything.</q>
                               </p>
-                            </div>
-                            <div class="quote-meta">
-                              <cite>Sam Cole</cite>
-                              <p class="caption">Client</p>
                             </div>
                           </blockquote>
                   </div>

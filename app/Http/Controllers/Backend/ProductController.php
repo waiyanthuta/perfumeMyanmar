@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    //Products
     public function show_product(){
         $products = Product::with('product_detail')->get();
         return view('backend.admin.products',["products" => $products]);
@@ -104,5 +105,43 @@ class ProductController extends Controller
             }
             $product->delete();
             return redirect()->route("backend.product")->with("success","Product has been deleted Successfully");
+    }
+
+    //Product Category
+
+    public function show_category(){
+        $categories = Category::all();
+        return view('backend.admin.product_category',["categories" => $categories]);
+    }
+
+    public function edit_category(Request $request){
+        $id = $request->id;
+        $cat = Category::find($id);
+        return response()->json($cat);
+    }
+
+    public function chg_category(Request $request){
+        $cat = Category::find($request->cat_id);
+        $cat->name = $request->name;
+        $cat->update();
+        return response()->json([
+            'status' =>200
+        ]);
+    }
+
+    public function insert_category(Request $request){
+        // dd($request->all());
+        $cat = new Category();
+        $cat->name = $request->name;
+        $cat->save();
+        return response()->json([
+            'status' =>200
+        ]);
+    }
+
+    public function del_category($id){
+        $cat = Category::find($id);
+        $cat->delete();
+        return back()->with("success", "Category has been deleted successfully");
     }
 }

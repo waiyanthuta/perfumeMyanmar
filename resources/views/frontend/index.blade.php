@@ -115,7 +115,7 @@
           <div class="container">
             <div class="inset-xl-left-70 inset-xl-right-70">
               <article class="box-cart bg-ebony-clay">
-                <div class="box-cart-image"><img src="images/home-2-342x338.jpg" alt="" width="342" height="338"/>
+                <div class="box-cart-image"><img src="{{asset('images/about-us-index.jpg')}}" alt="" width="342" height="338"/>
                 </div>
                 <div class="box-cart-body">
                   <blockquote class="blockquote-complex blockquote-complex-inverse">
@@ -127,13 +127,13 @@
                       <cite>Pwint Phyu</cite><small>Founder of Yanant Myanmar</small>
                     </div>
                   </blockquote>
-                  <div class="button-wrap inset-md-left-70"><a class="button button-responsive button-medium button-primary-outline-v2" href="#">Order Yanant</a></div>
+                  <div class="button-wrap inset-md-left-70"><a class="button button-responsive button-medium button-primary-outline-v2" href="{{route('frontend.perfumes')}}">View Yanant Perfumes</a></div>
                 </div>
               </article>
             </div>
           </div>
         </div>
-        <div class="bg-displaced bg-image" style="background-image: url(images/home-1.jpg);"></div>
+        <div class="bg-displaced bg-image" style="background-image: url(images/home-1.jpg); filter: blur(7px); -webkit-filter: blur(7px);"></div>
       </section>
 
       <section class="section-60 section-lg-100">
@@ -209,14 +209,14 @@
               <div class="row row-40">
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg icon-primary mercury-icon-group"></span>
-                    <div class="text-large counter">1450</div>
-                    <p class="box-header">Happy Clients</p>
+                    <div class="text-large counter">18</div>
+                    <p class="box-header">Yanants</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg-smaller icon-primary mercury-icon-scales"></span>
-                    <div class="text-large counter">23</div>
-                    <p class="box-header">Years of Experience</p>
+                    <div class="text-large counter">400</div>
+                    <p class="box-header">Products</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -227,7 +227,7 @@
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg icon-primary mercury-icon-case"></span>
-                    <div class="text-large counter">7500</div>
+                    <div class="text-large counter" >7500</div>
                     <p class="box-header">Personal Injury Cases</p>
                   </div>
                 </div>

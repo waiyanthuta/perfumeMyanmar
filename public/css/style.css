@@ -4648,7 +4648,7 @@ blockquote cite {
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center 80%;
+	background-position: center 100%;
 }
 
 @media (min-width: 768px) {
@@ -10716,7 +10716,7 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-static .rd-navbar-inner,
 .rd-navbar-fullwidth .rd-navbar-inner {
 	position: relative;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
@@ -10778,7 +10778,7 @@ html:not(.lt-ie10) .not-animated {
 	.rd-navbar-fixed .rd-navbar-brand img{
 		position: fixed;
 		margin-top: 20px !important;
-		margin-left: 120px;
+		margin-left: 100px;
 	}
 }
 
@@ -11990,7 +11990,7 @@ html.rd-navbar-fixed-linked .page {
 	padding: 33px 15px;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .rd-navbar-default.rd-navbar-static .rd-navbar-nav-inner {
