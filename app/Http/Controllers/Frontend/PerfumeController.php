@@ -17,4 +17,11 @@ class PerfumeController extends Controller
             "uniqueperfumes" => $uniqueperfumes
         ]);
     }
+    public function perfume_detail(Perfume $perfume) {
+        $relatedPerfs = Perfume::where('category', $perfume->category)->latest()->get(); 
+        return view('frontend.perfume_detail',[
+            "perfume" => $perfume,
+            "relatedPerfs" => $relatedPerfs,
+        ]);
+    }
 }

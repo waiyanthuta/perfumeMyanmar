@@ -5,13 +5,14 @@
           <div class="col-sm-9 col-md-11 col-xl-12">
             <div class="row row-50">
               <div class="col-md-6 col-lg-10 col-xl-3">
-                <div class="inset-xl-right-20" style="max-width: 510px;"><a class="brand" href="index.html"><img src="images/logo-inverse-143x28.png" alt="" width="143" height="28"/></a>
+                <div class="inset-xl-right-20" style="max-width: 510px;">
                   <p>
                     If you or your business is facing a legal
                     challenge that calls for sound advice and skilled representation, contact us today to arrange a free  consultation with an attorney.
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-xl-3">
+                <a class="brand" href="{{route('frontend.home')}}"><img src="{{asset('images/logo-inverse.png')}}" alt="" width="150" height="150"/></a>
                 {{-- <p class="h7">Recent Posts</p>
                       <article class="post post-preview post-preview-inverse"><a href="#">
                           <div class="unit unit-horizontal unit-spacing-lg">
@@ -59,17 +60,14 @@
                 <div class="row" style="max-width: 270px;">
                   <div class="col-6">
                     <ul class="list-marked-variant-2">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Perfumes</a></li>
-                      <li><a href="#">Products</a></li>
+                      <li><a href="{{route('frontend.home')}}">Home</a></li>
+                      <li><a href="{{route('frontend.about')}}">About Us</a></li>
+                      <li><a href="{{route('frontend.perfumes')}}">Perfumes</a></li>
+                      <li><a href="{{route('frontend.products')}}">Products</a></li>
+                      <li><a href="{{route('frontend.shops')}}">Shops</a></li>
                     </ul>
                   </div>
                   <div class="col-6">
-                    <ul class="list-marked-variant-2">
-                      <li><a href="about-us.html">Shops</a></li>
-                      <li><a href="contact-us.html">FAQ</a></li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -105,8 +103,8 @@
             <div class="group-sm group-middle">
               <p class="font-italic text-white">Follow Us:</p>
               <ul class="list-inline list-inline-reset">
-                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook" href="#"></a></li>
-                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-instagram" href="#"></a></li>
+                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook" href="https://www.facebook.com/officialyanant?mibextid=ZbWKwL"></a></li>
+                <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-instagram" href="https://instagram.com/official_yanant?igshid=Yzg5MTU1MDY="></a></li>
                 {{-- <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> --}}
               </ul>
             </div>

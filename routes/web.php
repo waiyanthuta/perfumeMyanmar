@@ -17,11 +17,9 @@ Route::name('frontend.')->group(function(){
 
     Route::get('/', [IndexController::class , 'index'])->name('home');
     Route::get('/about-us', [AboutController::class , 'index'])->name('about');
-    // Route::get('/contact-us', function () {
-    //     return view('frontend.contact-us');
-    // })->name('contact');
     Route::get('/shops', [FrontendShopController::class, 'index'])->name('shops');
     Route::get('/perfumes', [FrontendPerfumeController::class,'index'])->name('perfumes');
+    Route::get('/perfume_detail/{perfume}', [FrontendPerfumeController::class,'perfume_detail'])->name('perfume_detail');
     Route::get('/products', function () {
         return view('frontend.products');
     })->name('products');

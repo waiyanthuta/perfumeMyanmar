@@ -23,8 +23,8 @@
                   </ul>
                   <div class="rd-navbar-aside-group">
                     <ul class="list-inline list-inline-reset">
-                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-facebook" href="#"></a></li>
-                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-instagram" href="#"></a></li>
+                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-facebook" href="https://www.facebook.com/officialyanant?mibextid=ZbWKwL"></a></li>
+                      <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-instagram" href="https://instagram.com/official_yanant?igshid=Yzg5MTU1MDY="></a></li>
                       {{-- <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> --}}
                     </ul>
                   </div>

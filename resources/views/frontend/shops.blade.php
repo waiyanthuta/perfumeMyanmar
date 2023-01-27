@@ -11,16 +11,17 @@
 @foreach ($shops as $shop)
 <section class="section-35 section-md-50">
   <div class="container">
-    <h3>{{$shop->name}}(Yangon)</h3>
+    <h3>{{$shop->name}}</h3>
     <div class="row row-30 flex-row-md-reverse justify-content-lg-between">
       <div class="col-md-6">
       <img src="{{asset('images/shops/'.$shop->shop_pic)}}" alt="" width="570px !important" height="386px !important"/>
-        
       </div>
       <div class="col-md-6">
-        <div class="inset-lg-right-40 inset-xl-right-85 text-secondary">
-          <h6>{{$shop->desc}}</h6>
-          <h6>Location {{$shop->location}}</h6>
+        <div class="@if ($loop->iteration % 2 !== 0)
+        inset-lg-right-40 inset-xl-right-85
+        @else  inset-lg-left-40 inset-xl-left-70 @endif ">
+          <h5>{{$shop->desc}}</h5>
+          <h5>Location {{$shop->location}}</h5>
         </div>
       </div>
     </div>
@@ -28,7 +29,7 @@
 </section>
 @endforeach
 
-  <section class="section-40 section-md-bottom-100 section-xl-bottom-165">
+  {{-- <section class="section-40 section-md-bottom-100 section-xl-bottom-165">
     <div class="container">
       <h3>စံရိပ်ငြိမ် ဂမုန်းပွင့်ဆိုင်ခွဲ(Yangon)</h3>
       <div class="row row-30 justify-content-lg-between">
@@ -62,5 +63,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
 @endsection

@@ -202,7 +202,7 @@
         </div>
       </section>
 
-      <section class="section parallax-container bg-black" data-parallax-img="images/progress-bars-parallax-1.jpg">
+      <section class="section parallax-container bg-black numcatpic" data-parallax-img="images/progress-bars-parallax-1.jpg">
         <div class="parallax-content">
           <div class="section-50 section-md-90">
             <div class="container">

@@ -5,7 +5,9 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Yanant Cologne & Perfumes</span>
+            <span>Copyright &copy; Yanant Cologne & Perfumes</span> 2023 by Wai Yan Thuta <a href="https://www.facebook.com/sayar.khant?mibextid=ZbWKwL" class="btn btn-primary btn-sm btn-circle">
+                <i class="fab fa-facebook-f"></i>
+            </a>
         </div>
     </div>
 </footer>
