@@ -139,61 +139,31 @@
       <section class="section-60 section-lg-100">
         <div class="container">
           <div class="row row-40 align-items-sm-end">
+            @foreach ($perfumes->take(3) as $perfume)
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="thumbnail-variant-2-wrap">
                 <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-9-246x300.jpg" alt="" width="246" height="300"/>
+                  <figure class="thumbnail-image"><img src="{{('images/perfumes/'.$perfume->perfume_pic)}}" alt="" width="246" height="300"/>
                   </figure>
                   <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="#">+959 400 58 4721</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="#">yanant.myanmar@gmail.com</a></div>
+                    <div class="link-group mt-4"><a class="button button-responsive button-small button-primary-outline-v2" href="{{route('frontend.perfume_detail',$perfume->id)}}">View Detail</a></div>
                   </div>
                   <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Amanda Smith</a></p>
+                    <p class="text-header"><a href="{{route('frontend.perfume_detail',$perfume->id)}}">{{$perfume->name}}</a></p>
                     <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Paralegal</p>
+                    <p class="text-caption">Yanant Perfumes</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-10-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">John Doe</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Attorney</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-11-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Vanessa Ives</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Legal Assistant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            @endforeach
+            
             <div class="col-sm-6 col-md-12 col-lg-3 text-center">
               <div class="block-wrap-1">
                 <div class="block-number">08</div>
-                <h3 class="text-normal">Products</h3>
+                <h3 class="text-normal">Perfumes</h3>
                 <p class="h5 h5-smaller text-style-4">in Yanant</p>
                 <p>If you or your business is facing a legal challenge, contact us today to arrange a free initial consultation with an attorney.</p><a class="link link-group link-group-animated link-bold link-secondary" href="{{route('frontend.perfumes')}}"><span>See More</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
               </div>

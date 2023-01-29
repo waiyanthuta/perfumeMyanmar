@@ -57,144 +57,160 @@
  <div class="price">
     <div class="container">
         <div class="section-header text-center">
-            <p>Our Best Pricing</p>
+            <p>Click the product for more detail</p>
             <h3>Yanant Diffusers</h3>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            @foreach ($diffusers as $diffuser)
+            <div class="col-lg-3 col-md-4 col-sm-6 pdtmodal" href="#" id="{{$diffuser->id}}" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#ProductModal">
                 <div class="price-item">
                     <div class="price-img">
-                        <img src="images/price-1.jpg" alt="Image">
+                        <img src="{{asset('images/products/'. $diffuser->product_pic)}}" alt="Image">
                     </div>
                     <div class="price-text">
-                        <h2>Hair Cut</h2>
-                        <h3>$9.99</h3>
+                        <h2>{{$diffuser->name}}</h2>
+                        @foreach ($diffuser->product_detail as $detail)
+                        <h3>{{$detail->size}} - {{$detail->price}} kyats</h3>
+                        @endforeach
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-2.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Hair Wash</h2>
-                        <h3>$10.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-3.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Hair Color</h2>
-                        <h3>$11.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-4.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Hair Shave</h2>
-                        <h3>$12.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-5.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Hair Straight</h2>
-                        <h3>$13.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-6.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Facial</h2>
-                        <h3>$14.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-7.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Shampoo</h2>
-                        <h3>$15.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-8.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Beard Trim</h2>
-                        <h3>$16.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-9.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Beard Shave</h2>
-                        <h3>$17.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-10.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Wedding Cut</h2>
-                        <h3>$18.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-11.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Clean Up</h2>
-                        <h3>$19.99</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="price-item">
-                    <div class="price-img">
-                        <img src="images/price-12.jpg" alt="Image">
-                    </div>
-                    <div class="price-text">
-                        <h2>Massage</h2>
-                        <h3>$20.99</h3>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
 <!-- Pricing End -->
+ <!-- Pricing Start -->
+ <div class="price">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Click the product for more detail</p>
+            <h3>Yanant Humidifiers</h3>
+        </div>
+        <div class="row">
+            @foreach ($humidifiers as $humidifier)
+            <div class="col-lg-3 col-md-4 col-sm-6 pdtmodal" href="#" id="{{$humidifier->id}}" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#ProductModal">
+                <div class="price-item">
+                    <div class="price-img">
+                        <img src="{{asset('images/products/'. $humidifier->product_pic)}}" alt="Image">
+                    </div>
+                    <div class="price-text">
+                        <h2>{{$humidifier->name}}</h2>
+                        @foreach ($humidifier->product_detail as $detail)
+                        <h3>{{$detail->size}} - {{$detail->price}} kyats</h3>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Pricing End -->
+ <!-- Pricing Start -->
+ <div class="price">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Click the product for more detail</p>
+            <h3>Yanant Essential Oil</h3>
+        </div>
+        <div class="row">
+            @foreach ($essentialoils as $essentialoil)
+            <div class="col-lg-3 col-md-4 col-sm-6 pdtmodal" href="#" id="{{$essentialoil->id}}" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#ProductModal">
+                <div class="price-item">
+                    <div class="price-img">
+                        <img src="{{asset('images/products/'. $essentialoil->product_pic)}}" alt="Image">
+                    </div>
+                    <div class="price-text">
+                        <h2>{{$essentialoil->name}}</h2>
+                        @foreach ($essentialoil->product_detail as $detail)
+                        <h3>{{$detail->size}} - {{$detail->price}} kyats</h3>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Pricing End -->
+    <div class="modal fade" id="ProductModal" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top: 100px; padding: 0;">
+        <div class="modal-dialog" role="document" style=" border-radius: 50px 50px !important; ">
+            <div class="modal-content" style="background: linear-gradient(90deg, rgba(234,201,155,1) 2%, rgba(227,209,182,1) 66%, rgba(234,201,155,1) 100%); border-radius: 20px;">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100 text-center" id="productName"></h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="info">
+                 
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //show Product modal
+            $(document).on('click', '.pdtmodal' ,  function (e) {
+                            e.preventDefault();
+                            let id = $(this).attr('id');
+                            let output = "";
+                            // console.log(id);
+                            $.ajax({
+                                type: "GET",
+                                url: "/product_detail",
+                                data: {
+                                    id : id,
+                                    _token : '{{ csrf_token() }}'
+                                },
+                                dataType: "JSON",
+                                success: function (response) {
+                                    $("#productName").html(response.name);
+                                    // console.log(response);
+                                    output += `
+                                    <div class="d-flex justify-content-center ">
+                                    <img src="{{asset('images/products/${response.product_pic }')}}" alt="" width="200px" height="200px" style="object-fit:contain;">
+                                    </div>
+                                    <div class="container gap-5">
+                                        <p class="d-flex justify-content-between">
+                                            <span class="font-weight-bold text-black">Name</span> : <span id="name" class="text-black">${response.name}</span>
+                                        </p>
+                                        <p class="font-weight-bold text-black">Description : </p>
+                                        <p class="text-black">${response.desc}</p>
+                                    </div>
+                                        <div class="d-flex justify-content-around">
+                                    `;
+                                    response.product_detail.forEach(detail => {
+                                        output += ` <p class="text-black"> ${detail.size} - ${detail.price} kyats</p>`
+                                    });
+                                    output += `
+                                            </div>`
+                                    $('#info').html(output);
+
+                                }
+                                });
+                            // $.ajax({
+                            //     type: "get",
+                            //     url: "/product_detail",
+                            //     // method: "get",
+                            //     data: {
+                            //         id : id,
+                            //         _token : '{{ csrf_token() }}'
+                            //     },
+                            //     success: function (res) {
+                            //         // console.log(res);
+                            //         $("#productName").text(res.name);
+                            //         $("#productDesc").text(res.desc);
+                            //         $("#productpic").html(`<img src="{{asset('images/products/${res.product_pic }')}}" width="100px" height="100px">`);
+                            //     },
+                            // });
+                        });
+                });
+    </script>
 @endsection

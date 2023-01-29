@@ -17,7 +17,7 @@ class PerfumeSizeSeeder extends Seeder
     {
         DB::table('perfume_sizes')->insert([
             [
-                "size" => "5ml(roller)"
+                "size" => "3ml(roller)"
             ],
             [
                 "size" => "10ml(spray)"

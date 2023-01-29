@@ -9,6 +9,7 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ShopController;
 use App\Http\Controllers\Frontend\PerfumeController as FrontendPerfumeController;
 use App\Http\Controllers\Frontend\ShopController as FrontendShopController;
+use App\Http\Controllers\Frontend\ProductController as FrontendProductController;
 
 
 //front end routes
@@ -16,13 +17,12 @@ use App\Http\Controllers\Frontend\ShopController as FrontendShopController;
 Route::name('frontend.')->group(function(){
 
     Route::get('/', [IndexController::class , 'index'])->name('home');
-    Route::get('/about-us', [AboutController::class , 'index'])->name('about');
-    Route::get('/shops', [FrontendShopController::class, 'index'])->name('shops');
-    Route::get('/perfumes', [FrontendPerfumeController::class,'index'])->name('perfumes');
+    Route::get('/about-us', [AboutController::class , 'about'])->name('about');
+    Route::get('/shops', [FrontendShopController::class, 'shops'])->name('shops');
+    Route::get('/perfumes', [FrontendPerfumeController::class,'perfumes'])->name('perfumes');
     Route::get('/perfume_detail/{perfume}', [FrontendPerfumeController::class,'perfume_detail'])->name('perfume_detail');
-    Route::get('/products', function () {
-        return view('frontend.products');
-    })->name('products');
+    Route::get('/products', [FrontendProductController::class,'products'])->name('products');
+    Route::get('/product_detail', [FrontendProductController::class,'product_detail'])->name('product_detail');
 
 });
 

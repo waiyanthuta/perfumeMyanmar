@@ -38,7 +38,7 @@
                                             <td>{{$shop->name}}</td>
                                             <td> <textarea name="" id="" cols="10" rows="2" disabled width="100%" style="resize: horizontal!important">{{$shop->desc}}</textarea> </td>
                                             <td>{{$shop->location}}</td>
-                                            <td><a href="" id="{{$shop->id}}" class="btn btn-info edit" data-toggle="modal" data-target="#editShopModal">Edit</a></td>
+                                            <td><a href="#" id="{{$shop->id}}" class="btn btn-info edit" data-toggle="modal" data-target="#editShopModal">Edit</a></td>
                                             <td>
                                                 <a href="#" class="btn btn-danger btn-icon-split" data-toggle="modal"  data-target="#deleteUniPerfumeModal">
                                                     <span class="icon text-white-50">

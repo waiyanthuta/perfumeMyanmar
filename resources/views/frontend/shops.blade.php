@@ -21,7 +21,7 @@
         inset-lg-right-40 inset-xl-right-85
         @else  inset-lg-left-40 inset-xl-left-70 @endif ">
           <h5>{{$shop->desc}}</h5>
-          <h5>Location {{$shop->location}}</h5>
+          <h5>Location -- {{$shop->location}}</h5>
         </div>
       </div>
     </div>

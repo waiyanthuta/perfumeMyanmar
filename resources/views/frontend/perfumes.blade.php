@@ -47,8 +47,8 @@
       </section>
   
 
-      <section class="section-60 section-lg-100">
-        <div class="container">
+    <section class="section-60 section-lg-100">
+      <div class="container">
         <h3 class="text-center">Yanant Unique Perfumes</h3>
           <div class="row row-40 align-items-sm-end">
             @foreach ($uniqueperfumes as $uniqueperfume)
@@ -58,8 +58,9 @@
                   <figure class="thumbnail-image"><img src="{{('images/perfumes/'.$uniqueperfume->perfume_pic)}}" alt="" width="246px" height="300px"/>
                   </figure>
                   <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="#">+959 400 58 4721</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="#">yanant.myanmar@gmail.com</a></div>
+                    <div class="link-group mt-4"><a class="button button-responsive button-small button-primary-outline-v2" href="{{route('frontend.perfume_detail',$uniqueperfume->id)}}">View Detail</a></div>
                   </div>
                   <div class="thumbnail-caption">
                     <p class="text-header"><a href="{{route('frontend.perfume_detail',$uniqueperfume->id)}}">{{$uniqueperfume->name}}</a></p>
@@ -70,28 +71,13 @@
               </div>
             </div>
             @endforeach
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-10-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Orange & Neroli</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Yanant</p>
-                  </div>
-                </div>
-              </div>
-            </div>  
-      </section>
+          </div>
+      </div>
+    </section>
 
 
-      <section class="section-60 section-lg-100">
-        <div class="container">
+    <section class="section-60 section-lg-100">
+      <div class="container">
         <h3 class="text-center">Yanant Inspire Perfumes</h3>
           <div class="row row-40 align-items-sm-end">
           @foreach ($inspireperfumes as $inspireperfume)
@@ -101,8 +87,9 @@
                   <figure class="thumbnail-image"><img src="{{asset('images/perfumes/'.$inspireperfume->perfume_pic)}}" alt="" width="246" height="300"/>
                   </figure>
                   <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white">{{$inspireperfume->desc}}</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" >+1 (409) 987–5874</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="#">+959 400 58 4721</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="#">yanant.myanmar@gmail.com</a></div>
+                    <div class="link-group mt-4"><a class="button button-responsive button-small button-primary-outline-v2" href="{{route('frontend.perfume_detail',$inspireperfume->id)}}">View Detail</a></div>
                   </div>
                   <div class="thumbnail-caption">
                     <p class="text-header"><a href="{{route('frontend.perfume_detail',$inspireperfume->id)}}">{{$inspireperfume->name}}</a></p>
@@ -117,56 +104,7 @@
               </div>
             </div>
           @endforeach
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-10-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Orange & Neroli</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Yanant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-11-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Lilac and Bergamount</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Yanant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail-variant-2-wrap">
-                <div class="thumbnail thumbnail-variant-2">
-                  <figure class="thumbnail-image"><img src="images/team-11-246x300.jpg" alt="" width="246" height="300"/>
-                  </figure>
-                  <div class="thumbnail-inner">
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="tel:#">+1 (409) 987–5874</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="mailto:#">info@demolink.org</a></div>
-                  </div>
-                  <div class="thumbnail-caption">
-                    <p class="text-header"><a href="#">Green Tea</a></p>
-                    <div class="divider divider-md bg-teak"></div>
-                    <p class="text-caption">Yanant</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </section>
+          </div>
+      </div>
+    </section>
 @endsection

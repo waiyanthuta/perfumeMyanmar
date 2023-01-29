@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class PerfumeController extends Controller
 {
-    public function index() {
+    public function perfumes() {
         $inspireperfumes = Perfume::with('perfume_detail')->where('category','inspire')->get();
         $uniqueperfumes = Perfume::with('perfume_detail')->where('category','unique')->get();
         return view('frontend.perfumes',[

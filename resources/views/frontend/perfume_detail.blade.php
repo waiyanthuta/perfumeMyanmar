@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-<section class="section-30"style="background: #eee;">
+<section class="section-30"style="background: #FCF8ED;">
         <div class = "container card service">
           <!-- card left -->
           <div class = "service-item">
@@ -25,7 +25,7 @@
         </div>
 </section>
 
-<section class="sec bg-light">
+<section class="sec bg-light" style="background: linear-gradient(90deg, rgb(238, 215, 182) 2%, rgb(228, 218, 204) 66%, rgba(238, 215, 182) 100%);">
   <div class="container">
      <div class="row">
         <div class="col-sm-12 title_bx">
@@ -46,7 +46,6 @@
                   <h4 class="mb-1"> <a href="details.php"> {{$relatedPerf->name}} </a> </h4>
                   <div class="price-box mb-2">
                      <span class="price"> <i class="fa fa-list-alt"></i> {{$relatedPerf->category}} perfume</span>
-                     {{-- <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span> --}}
                   </div>
                   <div class="btn-box text-center">
                      <a class="btn btn-sm" href="{{route('frontend.perfume_detail',$relatedPerf->id)}}"> <i class="fa fa-shopping-cart"></i> View Detail </a>
