@@ -769,12 +769,22 @@
 				for (var j = 0; j < swiperSlide.length; j++) {
 					var $this = $(swiperSlide[j]),
 						url;
-
-					if (url = $this.attr("data-slide-bg")) {
-						$this.css({
-							"background-image": "url(" + url + ")",
-							"background-size": "cover"
-						})
+						
+						if (url = $this.attr("data-slide-bg")) {
+						
+						var x = window.matchMedia('(max-width: 768px)')
+						if(x.matches){
+							$this.css({
+								"background-image": "url(" + url + ")",
+								"background-size": "100% 50%",
+								"background-repeat": "no-repeat",
+							});
+						}else{
+							$this.css({
+								"background-image": "url(" + url + ")",
+								"background-size": "cover"
+							});
+						}
 					}
 				}
 
