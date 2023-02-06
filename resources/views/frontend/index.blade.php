@@ -212,6 +212,7 @@
         <div class="container">
           <h3 class="text-center">Yanant Reviews By Celebrities</h3>
           <div class="owl-carousel owl-spacing-1 owl-nav-classic owl-style-minimal" data-autoplay="true" data-items="1" data-md-items="2" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="true" data-nav="true" data-dots="true" data-dots-each="1">
+            @foreach ($reviews as $review)
             <div class="item">
               <blockquote class="quote-bordered">
                 <div class="quote-body">
@@ -221,25 +222,26 @@
                     </svg>
                   </div>
                   <div class="quote-body-inner">
-                    <h6>One of The Most Ethical Lawyers I’ve Ever Known...</h6>
+                    <h6>{{$review->headline}}</h6>
                     <p>
-                      <q>I’ve never known another lawyer more prepared or focused.  John has the ability to dissect a case much like a skilled surgeon, with absolute calm.  Nothing seems to distract him from his goal on a case, which of course, makes him extremely tough to beat.</q>
+                      <q>{{$review->review}}</q>
                     </p>
                   </div>
                 </div>
                 <div class="quote-footer">
                   <div class="unit unit-horizontal unit-spacing-sm align-items-center">
-                    <div class="unit-left"><img class="img-circle" src="images/clients-testimonials-1-68x68.jpg" alt="" width="68" height="68"/>
+                    <div class="unit-left"><img class="img-circle" src="{{asset('images/reviews/'.$review->author_pic)}}" alt="" width="68" height="68"/>
                     </div>
                     <div class="unit-body">
-                      <cite>Mark Wilson</cite>
-                      <p class="text-primary">CFO, Wilson Ltd.</p>
+                      <cite>{{$review->name}}</cite>
+                      <p class="text-primary">{{$review->job}}</p>
                     </div>
                   </div>
                 </div>
               </blockquote>
             </div>
-            <div class="item">
+            @endforeach
+            {{-- <div class="item">
               <blockquote class="quote-bordered">
                 <div class="quote-body">
                   <div class="quote-open">
@@ -265,73 +267,11 @@
                   </div>
                 </div>
               </blockquote>
-            </div>
+            </div> --}}
           </div>
         </div>
       </section>
 
-      {{-- Free Consultation --}}
-      {{-- <section class="bg-whisper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-lg-9 col-xl-7">
-              <div class="section-50 section-md-75 section-xl-100">
-                <h3>Free Consultation</h3>
-                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                  <div class="row row-30">
-                    <div class="col-md-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="request-form-name" type="text" name="name" data-constraints="@Required">
-                        <label class="form-label" for="request-form-name">Name</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="request-form-phone" type="text" name="phone" data-constraints="@Numeric @Required">
-                        <label class="form-label" for="request-form-phone">Phone</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-wrap">
-                        <input class="form-input" id="request-form-email" type="email" name="email" data-constraints="@Email @Required">
-                        <label class="form-label" for="request-form-email">Email</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-wrap form-wrap-outside">
-                        <!--Select 2-->
-                        <select class="form-input select-filter" id="request-form-select" data-minimum-results-for-search="Infinity">
-                          <option>Family Law</option>
-                          <option value="Family Law">Family Law</option>
-                          <option value="Business Law">Business Law</option>
-                          <option value="Civil Litigation">Civil Litigation</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-wrap">
-                        <textarea class="form-input" id="feedback-2-message" name="message" data-constraints="@Required"></textarea>
-                        <label class="form-label" for="feedback-2-message">Message</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <button class="button button-block button-primary" type="submit">Request a Free Consultation</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-xl-5 d-none d-xl-block">
-              <div style="margin-top: -40px;"><img src="images/home-4-472x753.png" alt="" width="472" height="753"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> --}}
 
       {{-- Latest New --}}
       <section class="section-50 section-md-75 section-xl-100">

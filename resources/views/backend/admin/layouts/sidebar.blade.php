@@ -23,29 +23,6 @@
                     <span>Admin Dashboard</span></a>
             </li>
 
-            {{-- <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Control Tab
-            </div>
-            
-            <!-- Nav Item - Products Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
-                aria-expanded="true" aria-controls="collapseFive">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Front End control</span>
-            </a>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">UI Dashboard</h6>
-                    <a class="collapse-item" href="">Index Banner</a>
-                </div>
-            </div>
-            </li> --}}
-            
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -129,6 +106,30 @@
                 </div>
             </div>
             </li>      
+
+              <!-- Divider -->
+              <hr class="sidebar-divider">
+
+              <!-- Heading -->
+              <div class="sidebar-heading">
+                  Control Tab
+              </div>
+              
+              <!-- Nav Item - Products Collapse Menu -->
+              <li class="nav-item">
+                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="true" aria-controls="collapseFive">
+                  <i class="fas fa-fw fa-cog"></i>
+                  <span>Review Control</span>
+              </a>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSidebar">
+                  <div class="bg-white py-2 collapse-inner rounded">
+                      <h6 class="collapse-header">Cele Review Tab</h6>
+                      <a class="collapse-item" href="{{route('backend.review')}}">View Reviews</a>
+                      <a class="collapse-item" href="{{route('backend.add_review')}}">Add Review</a>
+                  </div>
+              </div>
+              </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

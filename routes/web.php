@@ -10,7 +10,7 @@ use App\Http\Controllers\Backend\ShopController;
 use App\Http\Controllers\Frontend\PerfumeController as FrontendPerfumeController;
 use App\Http\Controllers\Frontend\ShopController as FrontendShopController;
 use App\Http\Controllers\Frontend\ProductController as FrontendProductController;
-
+use App\Http\Controllers\ReviewController;
 
 //front end routes
 
@@ -73,6 +73,15 @@ Route::name('backend.')->group(function(){
         Route::get('/admin/edit_shops',[ShopController::class,'edit_shop'])->name('edit_shop');
         Route::post('/admin/edit_shops',[ShopController::class,'chg_shop'])->name('chg_shop');
         Route::post('/admin/del_shops/{id}',[ShopController::class,'del_shop'])->name('del_shop');
+
+        //control tab
+
+        Route::get('/admin/reviews',[ReviewController::class,'show_rev'])->name('review');
+        Route::get('/admin/add_reviews',[ReviewController::class,'add_rev'])->name('add_review');
+        Route::post('/admin/insert_reviews',[ReviewController::class,'insert_rev'])->name('insert_review');
+        Route::get('/admin/edit_reviews/{review}',[ReviewController::class,'edit_rev'])->name('edit_review');
+        Route::post('/admin/edit_reviews/{review}',[ReviewController::class,'chg_rev'])->name('chg_review');
+        Route::post('/admin/del_reviews',[ReviewController::class,'del_rev'])->name('del_review');
 
     });
 });

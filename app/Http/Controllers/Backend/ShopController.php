@@ -23,10 +23,10 @@ class ShopController extends Controller
             "location" => "required",
             "shoppic" => "required",
         ],[
-            "name.required" => "Please fill the shop name",
-            "desc.required" => "Please fill the shop description",
-            "location.required" => "Please fill the shop location",
-            "shoppic.required" => "Please fill the shop picture",
+            "name.required" => "Please fill the shop name.",
+            "desc.required" => "Please fill the shop description.",
+            "location.required" => "Please fill the shop location.",
+            "shoppic.required" => "Please fill the shop picture.",
         ]);
         if($validation){
             $shop = new Shop();
