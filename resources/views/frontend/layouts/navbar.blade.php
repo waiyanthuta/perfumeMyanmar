@@ -17,7 +17,7 @@
                     <li>
                       <div class="unit unit-horizontal unit-spacing-xs align-items-center">
                         <div class="unit-left"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span></div>
-                        <div class="unit-body"><a class="link-dusty-gray" href="mailto:#">yanant.myanmar@gmail.com</a></div>
+                        <div class="unit-body"><a class="link-dusty-gray" href="mailto:#">pwintphyu@yanantofficial.com</a></div>
                       </div>
                     </li>
                   </ul>

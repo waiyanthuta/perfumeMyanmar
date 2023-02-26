@@ -18,6 +18,7 @@ class IndexController extends Controller
         return view('frontend.index',[
             "perfumes" => $perfumes,
             "reviews" => $reviews,
+            "shops" => $shops,
         ]);
     }
 }

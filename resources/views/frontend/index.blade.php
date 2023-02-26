@@ -119,9 +119,10 @@
                 </div>
                 <div class="box-cart-body">
                   <blockquote class="blockquote-complex blockquote-complex-inverse">
-                    <h3>About Us</h3>
+                    <h3>About Yanant</h3>
                     <p>
-                      <q>When you place your case in the hands of our lawyers and paralegals, you are placing your case in the hands of professionals who are committed to achieving the best possible outcome.</q>
+                      <q>
+                        ကျွန်မတို့ရဲ့ Yanantက ရနံ့ချစ်တဲ့သူတွေကြားထဲမှာ မမေ့နိုင်တဲ့အမှတ်တရလေးတွေကို ဖန်တီးပေးနိုင်လိမ့်မယ်လို့ ယုံကြည်ပါတယ်...</q>
                     </p>
                     <div class="quote-footer">
                       <cite>Pwint Phyu</cite><small>Founder of Yanant Myanmar</small>
@@ -147,7 +148,7 @@
                   </figure>
                   <div class="thumbnail-inner">
                     <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary material-icons-local_phone"></span><a class="link-white" href="#">+959 400 58 4721</a></div>
-                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="#">yanant.myanmar@gmail.com</a></div>
+                    <div class="link-group"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-white" href="#">pwintphyu@yanantofficial.com</a></div>
                     <div class="link-group mt-4"><a class="button button-responsive button-small button-primary-outline-v2" href="{{route('frontend.perfume_detail',$perfume->id)}}">View Detail</a></div>
                   </div>
                   <div class="thumbnail-caption">
@@ -165,7 +166,7 @@
                 <div class="block-number">08</div>
                 <h3 class="text-normal">Perfumes</h3>
                 <p class="h5 h5-smaller text-style-4">in Yanant</p>
-                <p>If you or your business is facing a legal challenge, contact us today to arrange a free initial consultation with an attorney.</p><a class="link link-group link-group-animated link-bold link-secondary" href="{{route('frontend.perfumes')}}"><span>See More</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
+                <p>Yanant Perfumes have unique scents combined with worldwide trends.</p><a class="link link-group link-group-animated link-bold link-secondary" href="{{route('frontend.perfumes')}}"><span>See More</span><span class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
               </div>
             </div>
           </div>
@@ -207,7 +208,7 @@
         </div>
       </section>
 
-
+      @if ($reviews->count())
       <section class="section-66 section-md-90 section-xl-bottom-100">
         <div class="container">
           <h3 class="text-center">Yanant Reviews By Celebrities</h3>
@@ -271,31 +272,34 @@
           </div>
         </div>
       </section>
+      @endif
 
-
+      
       {{-- Latest New --}}
       <section class="section-50 section-md-75 section-xl-100">
         <div class="container">
           <h3 class="text-center">Yanant Branches</h3>
           <div class="row row-40 row-offset-1 justify-content-sm-center justify-content-md-start">
+            @foreach ($shops as $shop)
             <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3">
               <article class="post-boxed">
-                <div class="post-boxed-image"><img src="images/home-5-268x182.jpg" alt="" width="268" height="182"/>
+                <div class="post-boxed-image"><img src="{{asset("images/shops/".$shop->shop_pic)}}" alt="" width="268" height="182"/>
                 </div>
                 <div class="post-boxed-body">
-                  <div class="post-boxed-title"><a href="#">The Lawyers Collective Women's Rights Initiative</a></div>
+                  <div class="post-boxed-title"><a href="#">{{$shop->name}}</a></div>
                   <div class="post-boxed-footer">
                     <ul class="post-boxed-meta">
-                      <li>
+                      {{-- <li>
                         <time datetime="2019-06-14">JUNE 14, 2019</time>
-                      </li>
-                      <li><span>by</span><a href="#">Admin</a></li>
+                      </li> --}}
+                      <li>{{$shop->location}}</li>
                     </ul>
                   </div>
                 </div>
               </article>
             </div>
-            <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3">
+            @endforeach
+            {{-- <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3">
               <article class="post-boxed">
                 <div class="post-boxed-image"><img src="images/home-6-268x182.jpg" alt="" width="268" height="182"/>
                 </div>
@@ -345,7 +349,7 @@
                   </div>
                 </div>
               </article>
-            </div>
+            </div> --}}
           </div>
         </div>
       </section>

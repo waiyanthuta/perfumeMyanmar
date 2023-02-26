@@ -7,8 +7,8 @@
               <div class="col-md-6 col-lg-10 col-xl-3">
                 <div class="inset-xl-right-20" style="max-width: 510px;">
                   <p>
-                    If you or your business is facing a legal
-                    challenge that calls for sound advice and skilled representation, contact us today to arrange a free  consultation with an attorney.
+                    We Yanant Colognes & Perfumes made an innovative, caring ,quality-obsessed perfumes to our community.
+                    We take pride in our reputation of providing quality and excellent value perfume and cologne.
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-xl-3">
@@ -80,7 +80,7 @@
                   </div>
                   <div class="unit unit-horizontal unit-spacing-md align-items-center">
                     <div class="unit-left"><span class="novi-icon icon icon-xs icon-storm-gray fa fa-envelope-o"></span></div>
-                    <div class="unit-body"><a class="link-white" href="mailto:#">yanant.myanmar@gmail.com</a></div>
+                    <div class="unit-body"><a class="link-white" href="mailto:#">pwintphyu@yanantofficial.com</a></div>
                   </div>
                   <div class="unit unit-horizontal unit-spacing-md">
                     <div class="unit-left"><span class="novi-icon icon icon-xs icon-storm-gray material-icons-place"></span></div>
