@@ -18,29 +18,29 @@
           <div class="row row-40 justify-content-xl-between align-items-lg-center">
             <div class="col-md-6 col-xl-5 text-secondary">
               <div class="inset-md-right-15 inset-xl-right-0">
-                <p>We do not see ourselves simply as 'lawyers' but will always strive to be our clients' trusted adviser whether that be in a commercial or personal context. We provide additional services well beyond those that might be expected of a law firm.</p>
+                <p>Yanant Colognes & Perfume Business comprises of Colognes and Perfumes in different sizes and packages according to customers preference which will help increase sales, popularity and profit making.</p>
                 <p>
-                  Our core values are integrity and trust, the encouragement of innovation, teamwork and the continuing personal development of everyone at the firm.
-                  
+                  There are several top quality perfume brands in Myanmar. Yanant ensure that our products are of Good quality and worth for each and every of perfume consumers.
+  
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <ul class="list-progress">
                 <li>
-                  <p class="animated fadeIn">Adoption Law</p>
-                  <div class="progress-bar-js progress-bar-horizontal progress-bar-sisal" data-value="70" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
+                  <p class="animated fadeIn">Authentic Scent</p>
+                  <div class="progress-bar-js progress-bar-horizontal progress-bar-sisal" data-value="80" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
                 </li>
                 <li>
-                  <p class="animated fadeIn">Family Law</p>
-                  <div class="progress-bar-js progress-bar-horizontal progress-bar-laser" data-value="54" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
+                  <p class="animated fadeIn">Various Sizes for customer choices</p>
+                  <div class="progress-bar-js progress-bar-horizontal progress-bar-laser" data-value="74" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
                 </li>
                 <li>
-                  <p class="animated fadeIn">Real Estate Law</p>
+                  <p class="animated fadeIn">Availability</p>
                   <div class="progress-bar-js progress-bar-horizontal progress-bar-fuscous-gray" data-value="87" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
                 </li>
                 <li>
-                  <p class="animated fadeIn">Personal Injury Law</p>
+                  <p class="animated fadeIn">Services</p>
                   <div class="progress-bar-js progress-bar-horizontal progress-bar-leather" data-value="90" data-stroke="4" data-easing="linear" data-counter="true" data-duration="1000" data-trail="100"></div>
                 </li>
               </ul>
@@ -61,16 +61,19 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="section-header text-left">
                         <p>Learn About Us</p>
-                        <h2>25 Years Experience</h2>
+                        <h2>Local Brand in Myanmar</h2>
                     </div>
                     <div class="about-text">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                          Our commitment is to provide Top Quality Products and Authenticity.
+                          We guarantee that all our Fragrance Essential Oils are 100% original and authentic from France.
+                          We take pride in our reputation of providing quality and excellent value perfume and cologne.                          
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                          Our fine fragrances contains in a range of Oil based perfumes with low alcohol.
+                          Currently we offer around 60 variants of 30ml, 10ml, and 5ml with EDP, EDT, EDC and Rollon type.                          
                         </p>
-                        <a class="btn" href="">Learn More</a>
+                        {{-- <a class="btn" href="">Learn More</a> --}}
                     </div>
                 </div>
             </div>
@@ -78,7 +81,7 @@
     </div>
     <!-- About End -->
 
-      <section class="class="section parallax-container bg-whisper">
+      {{-- <section class="class="section parallax-container bg-whisper">
         <div class="container">
           <div class="row align-items-lg-end">
             <div class="offset-md-1 offset-lg-0 col-md-8 col-lg-6 col-xl-5">
@@ -134,5 +137,5 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       @endsection

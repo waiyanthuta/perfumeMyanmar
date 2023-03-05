@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <section class="section-50 section-md-75 section-lg-100">
+      {{-- <section class="section-50 section-md-75 section-lg-100">
         <div class="container">
           <div class="row row-40">
             <div class="col-md-6 col-lg-4 height-fill">
@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
       <section class="bg-displaced-wrap">
         <div class="bg-displaced-body">
