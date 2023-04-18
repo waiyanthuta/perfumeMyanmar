@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Perfume;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,7 +35,11 @@ class PageController extends Controller
     }
 
     public function index(){
-        return view('backend.admin.index');
+        $perfumes= Perfume::all();
+        $humidifiers= Product::where('category_id','2')->get();
+        $diffusers= Product::where('category_id','1')->get();
+        $essentialOils= Product::where('category_id','3')->get();
+        return view('backend.admin.index',["perfumes"=>$perfumes,"humidifiers"=>$humidifiers,"diffusers"=>$diffusers,"essentialOils"=>$essentialOils]);
     }
     public function logout(){
         auth()->logout();
