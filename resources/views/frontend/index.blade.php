@@ -186,20 +186,20 @@
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg-smaller icon-primary mercury-icon-scales"></span>
-                    <div class="text-large counter">400</div>
+                    <div class="text-large counter">120</div>
                     <p class="box-header">Products</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg-smaller icon-primary mercury-icon-partners"></span>
-                    <div class="text-large counter counter-percent">98</div>
-                    <p class="box-header">Successful Cases</p>
+                    <div class="text-large counter counter-percent">90%</div>
+                    <p class="box-header">Long lasting scent</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg icon-primary mercury-icon-case"></span>
-                    <div class="text-large counter" >7500</div>
-                    <p class="box-header">Personal Injury Cases</p>
+                    <div class="text-large counter">{{$shops->count()}}</div>
+                    <p class="box-header">Branches</p>
                   </div>
                 </div>
               </div>

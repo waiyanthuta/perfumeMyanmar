@@ -18,7 +18,7 @@
                               <blockquote class="quote-minimal quote-minimal-inverse">
                                 <div class="quote-body">
                                   <p>
-                                    <q>အားပေးလို့ကျေးဇူးနော်</q>
+                                    <q>အားပေးလို့ကျေးဇူးအထူးတင်ရှိပါတယ်ရှင်</q>
                                   </p>
                                 </div>
                               </blockquote>

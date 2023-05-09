@@ -82,7 +82,7 @@ class ShopController extends Controller
         if(file_exists(public_path('images\shops\\').$shop->shop_pic)){
             unlink(public_path('images/shops/').$shop->shop_pic);
             $shop->delete();
+            return redirect()->route('backend.shop')->with('delete','Shop has been deleted successfully');
         }
-        return view('backend.admin.shops')->with('delete','Shop has been deleted successfully');
     }
 }
