@@ -13,12 +13,19 @@
                   <div class="owl-carousel-inverse">
                     <div class="owl-carousel owl-nav-position-numbering" data-autoplay="true" data-items="1" data-stage-padding="0" data-loop="false" data-margin="30" data-nav="true" data-numbering="#owl-numbering-1" data-animation-in="fadeIn" data-animation-out="fadeOut">
                       <div class="item">
+                        <blockquote class="quote-minimal quote-minimal-inverse">
+                          <div class="quote-body">
+                            <p>
+                              <q>Discover our limited editions, which capture fleeting moments and allow you to indulge in true olfactory luxury.</q>
+                            </p>
+                          </div>
+                        </blockquote>
                       </div>
                       <div class="item">
                               <blockquote class="quote-minimal quote-minimal-inverse">
                                 <div class="quote-body">
                                   <p>
-                                    <q>အားပေးလို့ကျေးဇူးအထူးတင်ရှိပါတယ်ရှင်</q>
+                                    <q>From vibrant floral bouquets to sophisticated woody notes, our perfumes are meticulously composed to envelop you in a unique olfactory experience. </q>
                                   </p>
                                 </div>
                               </blockquote>
@@ -27,7 +34,7 @@
                               <blockquote class="quote-minimal quote-minimal-inverse">
                                 <div class="quote-body">
                                   <p>
-                                    <q>John and his staff were great with making us feel comfortable during the process. They kept us updated on our case progress and were very helpful with all of the paperwork we needed to complete. We are very pleased with the outcome of everything.</q>
+                                    <q>Explore our exclusive range of signature scent collections, each designed to evoke a distinct mood and celebrate diverse personalities.</q>
                                   </p>
                                 </div>
                               </blockquote>

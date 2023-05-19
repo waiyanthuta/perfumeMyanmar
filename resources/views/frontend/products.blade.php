@@ -15,7 +15,9 @@
                   <div class="item">
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
-                              
+                              <p>
+                                <q style="color: black!important">Step into a world of sensory bliss and elevate your space with the transformative power of aromatherapy.</q>
+                              </p>
                             </div>
                             <div class="quote-meta">
                             </div>
@@ -25,7 +27,7 @@
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
                               <p>
-                                <q style="color: black!important">I am so glad we chose LawExpert law firm to represent us. We were in a very bad motorcycle accident. We were treated like family and were kept involved every step of the way. Thank you all who were involved in one way or other working our case!</q>
+                                <q style="color: black!important">We also specialize in providing a curated selection of diffusers, essential oils, and humidifiers that transform your surroundings into a haven of relaxation, rejuvenation, and serenity.</q>
                               </p>
                             </div>
                           </blockquote>
@@ -34,7 +36,7 @@
                           <blockquote class="quote-minimal quote-minimal-inverse">
                             <div class="quote-body">
                               <p>
-                                <q style="color: black!important">John and his staff were great with making us feel comfortable during the process. They kept us updated on our case progress and were very helpful with all of the paperwork we needed to complete. We are very pleased with the outcome of everything.</q>
+                                <q style="color: black!important">These elegantly designed devices not only add a touch of beauty to any room but also offer practical functionality and intuitive controls, making it effortless to create the perfect aromatic environment</q>
                               </p>
                             </div>
                           </blockquote>
@@ -80,7 +82,6 @@
     </div>
 </div>
 <!-- Pricing End -->
- <!-- Pricing Start -->
  <div class="price">
     <div class="container">
         <div class="section-header text-center">
@@ -97,6 +98,32 @@
                     <div class="price-text">
                         <h2>{{$humidifier->name}}</h2>
                         @foreach ($humidifier->product_detail as $detail)
+                        <h3>{{$detail->size}} - {{$detail->price}} kyats</h3>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+{{-- </div> --}}
+ <!-- Pricing Start -->
+ <div class="price">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Click the product for more detail</p>
+            <h3>Yanant Car Perfumes</h3>
+        </div>
+        <div class="row">
+            @foreach ($carperfs as $carperf)
+            <div class="col-lg-3 col-md-4 col-sm-6 pdtmodal" href="#" id="{{$carperf->id}}" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#ProductModal">
+                <div class="price-item">
+                    <div class="price-img">
+                        <img src="{{asset('images/products/'. $carperf->product_pic)}}" alt="Image">
+                    </div>
+                    <div class="price-text">
+                        <h2>{{$carperf->name}}</h2>
+                        @foreach ($carperf->product_detail as $detail)
                         <h3>{{$detail->size}} - {{$detail->price}} kyats</h3>
                         @endforeach
                     </div>
@@ -150,7 +177,7 @@
                         {{-- <h6 class="mark d-inline">ဒီမှာဝယ်လို့ရတယ်နော်</h6> --}}
                         <div style="width: 100%">
                           <p class="text-black">
-                           Yanant Myanmarမှ Product​များကို ဝယ်ယူလိုပါက <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 09 400584721 , <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 095413225 သို့ဆက်သွယ်စုံစမ်းမှာယူနိုင်ပါတယ်နော်။ Yanant Myanmarရဲ့ <a class="mark text-white" href="#">Official Facebook Page</a> မှလည်း ဝယ်ယူအားပေးနိင်ပါတယ်။<br>
+                           Yanant Myanmarမှ Product​များကို ဝယ်ယူလိုပါက <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 09 400584721 , <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 095413225 သို့ဆက်သွယ်စုံစမ်းမှာယူနိုင်ပါတယ်နော်။ Yanant Myanmarရဲ့ <a class="mark text-white" href="https://www.facebook.com/officialyanant?mibextid=ZbWKwL">Official Facebook Page</a> မှလည်း ဝယ်ယူအားပေးနိင်ပါတယ်။<br>
                            Yanant Myanmarရဲ့ဆိုင်ခွဲလေးတွေကို <a href="{{route('frontend.shops')}}" class="link link-primary-inline active font-weight-bold text-underline">ဒီနေရာမှာ</a> ဝင်ရောက်ကြည့်ရှုနိုင်ပါတယ်. </p>
                         </div>
                     {{-- <button class="btn btn-secondary" type="button" data-dismiss="modal">Back</button> --}}

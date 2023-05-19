@@ -12,10 +12,12 @@ class ProductController extends Controller
         $diffusers = Product::with('product_detail')->where('category_id','1')->get();
         $humidifiers = Product::with('product_detail')->where('category_id','2')->get();
         $essentialoils = Product::with('product_detail')->where('category_id','3')->get();
+        $carperfs = Product::with('product_detail')->where('category_id','4')->get();
         return view('frontend.products',[
             "diffusers" => $diffusers,
             "humidifiers" => $humidifiers,
             "essentialoils" => $essentialoils,
+            "carperfs" => $carperfs,
         ]);
     }
 
