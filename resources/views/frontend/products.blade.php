@@ -174,7 +174,6 @@
                  
                 </div>
                 <div class="modal-footer">
-                        {{-- <h6 class="mark d-inline">ဒီမှာဝယ်လို့ရတယ်နော်</h6> --}}
                         <div style="width: 100%">
                           <p class="text-black">
                            Yanant Myanmarမှ Product​များကို ဝယ်ယူလိုပါက <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 09 400584721 , <span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span> 095413225 သို့ဆက်သွယ်စုံစမ်းမှာယူနိုင်ပါတယ်နော်။ Yanant Myanmarရဲ့ <a class="mark text-white" href="https://www.facebook.com/officialyanant?mibextid=ZbWKwL">Official Facebook Page</a> မှလည်း ဝယ်ယူအားပေးနိင်ပါတယ်။<br>
@@ -228,21 +227,6 @@
 
                                 }
                                 });
-                            // $.ajax({
-                            //     type: "get",
-                            //     url: "/product_detail",
-                            //     // method: "get",
-                            //     data: {
-                            //         id : id,
-                            //         _token : '{{ csrf_token() }}'
-                            //     },
-                            //     success: function (res) {
-                            //         // console.log(res);
-                            //         $("#productName").text(res.name);
-                            //         $("#productDesc").text(res.desc);
-                            //         $("#productpic").html(`<img src="{{asset('images/products/${res.product_pic }')}}" width="100px" height="100px">`);
-                            //     },
-                            // });
                         });
                 });
     </script>
