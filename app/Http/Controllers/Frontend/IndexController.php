@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(){
-        $perfumes = Perfume::with('perfume_detail')->latest()->get();
+        $perfumes = Perfume::latest()->get();
         $reviews = Review::all();
         $shops = Shop::all();
         return view('frontend.index',[
