@@ -11,7 +11,7 @@ use App\Models\Shop;
 class IndexController extends Controller
 {
     public function index(){
-        $perfumes = Perfume::all();
+        $perfumes = Perfume::with('perfume_detail')->get();
         $reviews = Review::all();
         $shops = Shop::all();
         return view('frontend.index',[
